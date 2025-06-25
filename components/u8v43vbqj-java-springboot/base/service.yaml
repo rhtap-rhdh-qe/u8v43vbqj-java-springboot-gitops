@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: u8v43vbqj-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: u8v43vbqj-java-springboot 
+  name: u8v43vbqj-java-springboot
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: u8v43vbqj-java-springboot 
